@@ -51,6 +51,7 @@
   ],
   "route": {
     "rules": [
+      {"type": "field", "domain": ["keyword:appstorrent.ru"], "outbound": "🎯 全球直连"},
       {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
